@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book an Appointment | Henna by Swetha</title>
+  <link rel="icon" type="image/png" href="images/HSl.jpg">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-flex">
+      <div class="logo-brand">
+        <a href="index.html" class="logo-link">
+          <img src="images/HSl.jpg" alt="Henna by Swetha Logo" class="logo">
+         </a> <h1>Henna by Swetha</h1>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li class="dropdown">
+            <a href="services.html" class="nav-link">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html#bridal" class="nav-link">Bridal Mehendi</a></li>
+              <li><a href="services.html#festive" class="nav-link">Festive Mehendi</a></li>
+              <li><a href="services.html#bridesmaid" class="nav-link">Bridesmaid Mehendi</a></li>
+              <li><a href="services.html#kids" class="nav-link">Kids & Minimal</a></li>
+             </ul>
+          </li>
+          <li><a href="booking.html" class="nav-link active">Booking</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Booking Form Section -->
+  <section class="booking">
+    <div class="container">
+      <h2>Book an Appointment</h2>
+      <p>Fill in your details and we’ll get back to you to confirm your slot!</p>
+
+      <form id="bookingForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" required title="Enter a valid 10-digit phone number" />
+
+        <label for="email">Email (optional)</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" name="time" required />
+
+        <label for="service">Type of Mehendi</label>
+        <select id="service" name="service" required>
+          <option value="">-- Select a service --</option>
+          <option value="bridal">Bridal Mehendi</option>
+          <option value="festive">Festive Mehendi</option>
+          <option value="kids">Kids / Minimal Mehendi</option>
+          <option value="bridesmaid">Bridesmaid Mehendi</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="notes">Additional Notes</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Any specific design or location preference?"></textarea>
+
+        <button type="submit" class="btn">Submit Booking</button>
+        <p id="successMessage" style="display:none; margin-top: 1rem; color: green;">
+          Thank you! We’ll reach out soon to confirm your booking.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Henna by Swetha | All rights reserved</p>
+      <p>
+        📍 Tiruchirappalli, Tamil Nadu &nbsp; | &nbsp;
+        📞 <a href="tel:08072311407">080723 11407</a> &nbsp; | &nbsp;
+        📧 <a href="mailto:hennabyswetha1416@gmail.com">hennabyswetha1416@gmail.com</a> &nbsp; | &nbsp;
+        <a href="https://www.instagram.com/henna_by_swetha_?utm_source=qr&igsh=ZnB4dzgwbmRnanl0" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </p>
+    </div>
+  </footer>
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
